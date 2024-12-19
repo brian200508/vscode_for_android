@@ -184,8 +184,8 @@ class HomeController extends GetxController {
     }
     // ubuntu资源包
     await AssetsUtils.copyAssetToPath(
-      'assets/ubuntu-noble-aarch64-pd-v4.11.0.tar.xz',
-      '$prootDistroPath/dlcache/ubuntu-noble-aarch64-pd-v4.11.0.tar.xz',
+      'assets/ubuntu-jammy-aarch64-pd-v4.8.0.tar.xz',
+      '$prootDistroPath/dlcache/ubuntu-jammy-aarch64-pd-v4.8.0.tar.xz',
     );
     if (!hasBash()) {
       initTerminal();
