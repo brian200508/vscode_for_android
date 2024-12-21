@@ -1,8 +1,8 @@
 name: vscode_for_android
 description: VS Code for Android
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
-version: 1.4.96+1
-code_server: 4.96.1
+version: 1.4.96+2
+code_server: 4.96.2
 environment:
   sdk: ">=3.3.0 <4.0.0"
 
