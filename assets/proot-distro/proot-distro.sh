@@ -1781,6 +1781,15 @@ command_login() {
 		esac
 
 		if [ -n "$cpu_emulator_path" ]; then
+			if [ -e "$cpu_emulator_path" ]; then
+				msg
+				msg "${GREEN}OK: path '${cpu_emulator_path}' exists.${RST}"
+				msg
+			else
+				msg
+				msg "${BRED}Error: path '${cpu_emulator_path}' does not exist.${RST}"
+				msg
+			fi
 			if [ -x "$cpu_emulator_path" ]; then
 				set -- "-q" "$cpu_emulator_path" "$@"
 			else
