@@ -62,7 +62,7 @@ DEFAULT_FAKE_KERNEL_VERSION="6.2.1-PRoot-Distro"
 
 # Emulator type for x86_64 systems.
 # Can be either BLINK or QEMU.
-: "${PROOT_DISTRO_X64_EMULATOR:=BLINK}"
+: "${PROOT_DISTRO_X64_EMULATOR:=QEMU}"
 
 # Colors.
 if [ -n "$(command -v tput)" ] && [ "$(tput colors 2>/dev/null || echo 0)" -ge 8 ] && [ -z "${PROOT_DISTRO_FORCE_NO_COLORS-}" ]; then
@@ -645,6 +645,8 @@ run_proot_cmd() {
 			;;
 		esac
 
+		msg "${YELLOW}DEVICE_CPU_ARCH: '${DEVICE_CPU_ARCH}'.${RST}"
+		msg "${YELLOW}DISTRO_ARCH: '${DISTRO_ARCH}'.${RST}"
 		if [ -n "$cpu_emulator_path" ]; then
 			if [ -e "$cpu_emulator_path" ]; then
 				msg
@@ -1780,6 +1782,8 @@ command_login() {
 			;;
 		esac
 
+		msg "${YELLOW}DEVICE_CPU_ARCH: '${DEVICE_CPU_ARCH}'.${RST}"
+		msg "${YELLOW}target_arch: '${target_arch}'.${RST}"
 		if [ -n "$cpu_emulator_path" ]; then
 			if [ -e "$cpu_emulator_path" ]; then
 				msg
