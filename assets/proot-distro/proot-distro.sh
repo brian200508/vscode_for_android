@@ -2715,6 +2715,7 @@ case "$(uname -m)" in
 armv7l | armv8l) DEVICE_CPU_ARCH="arm" ;;
 *) DEVICE_CPU_ARCH=$(uname -m) ;;
 esac
+DEVICE_CPU_ARCH="aarch64" #FIXME: just for debugging 
 DISTRO_ARCH=${DISTRO_ARCH:-}
 if [ -z "$DISTRO_ARCH" ]; then DISTRO_ARCH="${DEVICE_CPU_ARCH}"; fi
 
