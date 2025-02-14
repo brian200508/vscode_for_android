@@ -1,1 +1,1 @@
-flutter run --release --dart-define=CSVERSION=4.96.4
+flutter run --release --dart-define=CSVERSION=4.97.1-rc.1
