@@ -40,7 +40,7 @@
             "deviceId": "24129PN74C",
             "program": "lib/main.dart",
             "args": [
-                "--dart-define=CSVERSION=4.97.1-rc.1"
+                "--dart-define=CSVERSION=4.97.2"
             ]
         },
         {
@@ -55,7 +55,7 @@
             "type": "dart",
             "deviceId": "24091RPADC",
             "args": [
-                "--dart-define=CSVERSION=4.97.1-rc.1"
+                "--dart-define=CSVERSION=4.97.2"
             ]
         },
         {
